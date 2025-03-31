@@ -215,7 +215,7 @@ export const projects = [
       "/tailwind.png",
       "/gitwhite.png",
       "/js.png",
-      "/jwt.png",
+      "/JWT.png",
     ],
     link: "https://toto-wala.onrender.com/",
   },
