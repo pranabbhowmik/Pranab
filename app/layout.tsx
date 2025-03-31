@@ -8,8 +8,37 @@ import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Space Portfolio",
-  description: "This is my portfolio",
+  title: "Pranab Bhowmik | Full-Stack Developer",
+  description:
+    "Explore Pranab Bhowmik's portfolio showcasing expertise in MERN stack development.",
+  openGraph: {
+    title: "Pranab Bhowmik | Full-Stack Developer",
+    description:
+      "MERN stack developer building fast, scalable web apps with React, Node.js, MongoDB, and Express.",
+    url: "https://pranabbhowmik.netlify.app/",
+    siteName: "Pranab Bhowmik Portfolio",
+    images: [
+      {
+        url: "https://pranabbhowmik.netlify.app/portfoliopic.png",
+        width: 800,
+        height: 600,
+        alt: "Pranab Bhowmik Portfolio",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@pranabbhowmik",
+    creator: "@pranabbhowmik",
+    title: "Pranab Bhowmik | Full-Stack Developer",
+    description:
+      "Explore Pranab Bhowmik's portfolio showcasing expertise in MERN stack development.",
+    images: ["https://pranabbhowmik.netlify.app/portfoliopic.png"],
+  },
+  alternates: {
+    canonical: "https://pranabbhowmik.netlify.app/",
+  },
 };
 
 export default function RootLayout({

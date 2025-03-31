@@ -2,6 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import { IoCloudDownloadOutline } from "react-icons/io5";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 import {
@@ -59,7 +60,10 @@ const HeroContent = () => {
           download="Pranab-bhowmik-resume.pdf"
           className="button-primary py-2 px-5 text-white text-center cursor-pointer rounded-lg max-w-[200px]"
         >
-          Resume
+          <span className="flex items-center justify-center gap-2">
+            Resume
+            <IoCloudDownloadOutline className="h-5 w-5" />
+          </span>
         </motion.a>
       </div>
 
