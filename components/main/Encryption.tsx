@@ -9,7 +9,7 @@ import { CompareDemo } from "../sub/CompareDemo";
 const Encryption = () => {
   return (
     <>
-      {/* <div className="flex flex-row relative items-center justify-center min-h-screen w-full">
+      <div className="flex flex-row relative items-center justify-center min-h-screen w-full">
         <div className="absolute w-auto h-auto top-0 z-[5]">
           <motion.div
             variants={slideInFromTop}
@@ -23,7 +23,7 @@ const Encryption = () => {
           </motion.div>
         </div>
 
-         <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
+        {/*   <div className="flex flex-col items-center justify-center translate-y-[-50px] absolute z-[20] w-auto h-auto">
           <div className="flex flex-col items-center group cursor-pointer w-auto h-auto">
             <Image
               src="/LockTop.png"
@@ -56,8 +56,9 @@ const Encryption = () => {
             src="/encryption.webm/"
           />
         </div>
-      </div> */}
-      <CompareDemo />
+*/}
+        <CompareDemo />
+      </div>
     </>
   );
 };
