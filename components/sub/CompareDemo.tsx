@@ -5,12 +5,12 @@ export function CompareDemo() {
   return (
     <div>
       <Compare
-        firstImage="https://assets.aceternity.com/code-problem.png"
-        secondImage="https://assets.aceternity.com/code-solution.png"
+        firstImage="https://s3.eu-west-2.amazonaws.com/assets.archilink.co.uk/_2000xAUTO_crop_center-center_none/7547/Elevation-Lidar-underlay.webp"
+        secondImage="https://s3.eu-west-2.amazonaws.com/assets.archilink.co.uk/_2000xAUTO_crop_center-center_none/7548/Elevation-Lidar-overlay-line.webp"
         firstImageClassName="object-cover object-left-top"
         secondImageClassname="object-cover object-left-top"
-        className="h-[250px] w-[240px] md:h-[500px] md:w-[500px]"
-        slideMode="drag"
+        className="h-[210px] w-[340px] md:h-[400px] md:w-[69rem]"
+        slideMode="hover"
       />
     </div>
   );
