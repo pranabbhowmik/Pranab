@@ -31,7 +31,7 @@ const Footer = () => {
             </h3>
             <a
               href="mailto:bhowmikpranab37@gmail.com"
-              className="text-base sm:text-lg break-all"
+              className="text-base sm:text-lg break-all cursor-pointer"
             >
               bhowmikpranab37@gmail.com
             </a>

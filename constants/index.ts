@@ -259,7 +259,7 @@ export const projects = [
       "/restfullapi.png",
       "/mongodb.png",
     ],
-    link: "/https://goppo.onrender.com/signup",
+    link: "https://goppo.onrender.com/",
   },
   {
     id: 5,
@@ -287,7 +287,7 @@ export const projects = [
       "/JWT.png",
       "/express.png",
     ],
-    link: "https://saregamapadha.netlify.app/",
+    link: "https://online-votting-system.onrender.com",
   },
 ];
 
