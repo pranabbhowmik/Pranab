@@ -52,6 +52,8 @@ const config: Config = {
       fontFamily: {
         "sans-serif": "Arial",
         serif: "Georgia",
+        rubik: ["Rubik", "sans-serif"],
+        robotoMono: ["Roboto Mono", "monospace"],
       },
       // Adding text sizes from the example config
       fontSize: {

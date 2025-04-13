@@ -8,8 +8,8 @@ import Link from "next/link";
 
 const RecentProjects = () => {
   return (
-    <div>
-      <h1 className="text-[40px] font-medium text-center text-gray-200 py-7">
+    <div id="projects">
+      <h1 className="text-[40px] -mt-64 md:mt-0 font-medium text-center text-gray-200 py-7">
         Projects
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10 space-y-10">

@@ -19,6 +19,9 @@ const Navbar = () => {
         >
           Experience
         </a>
+        <a href="#code" className="cursor-pointer hover:text-[#8A5CFF]">
+          Code
+        </a>
         {/* <a href="#contact" className="cursor-pointer hover:text-[#8A5CFF]">
           Contact
         </a> */}

@@ -10,6 +10,7 @@ import Footer from "@/components/main/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("http://localhost:3000"), // or replace with your production domain
   title: "Pranab Bhowmik | Full-Stack Developer",
   description:
     "Explore Pranab Bhowmik's portfolio showcasing expertise in MERN stack development.",
@@ -65,9 +66,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body
-        className={`${inter.className} bg-[#030014] overflow-y-scroll overflow-x-hidden`}
-      >
+      <body className={`${inter.className} bg-[#030014] overflow-x-hidden`}>
         <StarsCanvas />
         <Navbar />
         {children}
