@@ -4,6 +4,14 @@ import React from "react";
 import { motion } from "framer-motion";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 import { SparklesIcon } from "@heroicons/react/24/solid";
+import { SiHackerearth } from "react-icons/si";
+import {
+  FaHackerrank,
+  FaGithub,
+  FaXTwitter,
+  FaLinkedinIn,
+} from "react-icons/fa6";
+
 import Image from "next/image";
 import {
   slideInFromLeft,
@@ -19,7 +27,7 @@ const HeroContent = () => {
       className="container flex flex-col-reverse md:flex-row items-center justify-between px-8 md:px-20 mt-20 md:mt-40 w-full z-[20]"
     >
       {/* Left Content */}
-      <div className="w-full md:w-1/2 flex flex-col gap-6 items-center md:items-start text-center md:text-start">
+      <motion.div className="w-full md:w-1/2 flex flex-col gap-10 items-center md:items-start text-center md:text-start">
         {/* Header Box */}
         <motion.div
           variants={slideInFromTop}
@@ -43,29 +51,63 @@ const HeroContent = () => {
           </span>
         </motion.div>
 
+        {/* Social Icons with animation and rounded background */}
+        <motion.div
+          variants={slideInFromLeft(0.6)}
+          className="flex flex-wrap gap-4 justify-center md:justify-start text-white"
+        >
+          {[
+            {
+              icon: <FaHackerrank />,
+              link: "https://www.hackerrank.com/profile/cse_tukai",
+            },
+            { icon: <FaXTwitter />, link: "https://x.com/PranabB17867819" },
+            {
+              icon: <FaLinkedinIn />,
+              link: "https://www.linkedin.com/in/pranab-bhowmik-58812a231/",
+            },
+            { icon: <FaGithub />, link: "https://github.com/pranabbhowmik" },
+            {
+              icon: <SiHackerearth />,
+              link: "https://www.codechef.com/users/pranab17",
+            },
+          ].map((item, index) => (
+            <motion.a
+              key={index}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 flex items-center justify-center rounded-full border border-gray-600 hover:bg-gradient-to-r hover:from-purple-500 hover:to-cyan-500 transition-all duration-300"
+              whileHover={{ scale: 1.1 }}
+            >
+              <span className="text-2xl">{item.icon}</span>
+            </motion.a>
+          ))}
+        </motion.div>
+
         {/* Description */}
         <motion.p
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[500px]"
         >
-          An explorer and a passionate Full-Stack Developer who loves
-          JavaScript, crafting innovative solutions, and embracing new
+          An explorer and a passionate <strong>Full-Stack Developer</strong> who
+          loves JavaScript, crafting innovative solutions, and embracing new
           challenges.
         </motion.p>
 
         {/* CTA Button */}
         <motion.a
           variants={slideInFromLeft(1)}
-          href="/Pranab-bhowmik-resume.pdf" // Adjust the filename accordingly
+          href="/Pranab-bhowmik-resume.pdf"
           download="Pranab-bhowmik-resume.pdf"
-          className="button-primary py-2 px-5 text-white text-center cursor-pointer rounded-lg max-w-[200px]"
+          className="button-primary py-2 px-5 text-white text-center cursor-pointer rounded-lg max-w-[200px] bg-gradient-to-r from-purple-500 to-cyan-500 hover:brightness-110"
         >
           <span className="flex items-center justify-center gap-2">
             Resume
             <IoCloudDownloadOutline className="h-5 w-5" />
           </span>
         </motion.a>
-      </div>
+      </motion.div>
 
       {/* Right Image */}
       <motion.div
