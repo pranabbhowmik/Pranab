@@ -119,7 +119,7 @@ const HeroContent = () => {
           alt="Portfolio Picture"
           height={500}
           width={500}
-          className="md:mt-0 mt-10 max-w-full h-auto"
+          className="md:-mt-12 mt-10 max-w-full h-auto"
         />
       </motion.div>
     </motion.div>
