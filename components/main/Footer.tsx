@@ -45,7 +45,7 @@ const Footer = () => {
           Copyright &copy; 2024, All Rights Reserved{" "}
           <span className="text-blue-500">Pranab Bhowmik</span>
         </p>
-        <div className="flex flex-wrap justify-center gap-4 mt-2 md:mt-0">
+        <div className="flex flex-wrap justify-center cursor-pointer gap-4 mt-2 md:mt-0">
           <a
             href="https://www.linkedin.com/in/pranab-bhowmik-58812a231/"
             className="hover:text-blue-500 transition"
