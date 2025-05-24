@@ -297,7 +297,7 @@ export const projects = [
     iconLists: [
       "/react.png",
       "/tailwind.png",
-      "//restfullapi.png",
+      "/restfullapi.png",
       "/router.png",
       "/express.png",
     ],
