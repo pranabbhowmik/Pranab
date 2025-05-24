@@ -289,6 +289,20 @@ export const projects = [
     ],
     link: "https://online-votting-system.onrender.com",
   },
+  {
+    id: 7,
+    title: "GenName Ai",
+    des: "A web application that uses AI to generate and explain the meanings of names, providing insights into their origins and significance.",
+    img: "/genname.png",
+    iconLists: [
+      "/react.png",
+      "/tailwind.png",
+      "//restfullapi.png",
+      "/router.png",
+      "/express.png",
+    ],
+    link: "https://gennameai.onrender.com/",
+  },
 ];
 
 export const workExperience = [
